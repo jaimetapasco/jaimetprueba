@@ -1,4 +1,4 @@
-function processData(input) {
+function dataProcessMarketing(input) {
         let reached = 2, 
             sharing = 2;
         for(let day = 1; day < input; day++)
@@ -9,8 +9,6 @@ function processData(input) {
     console.log(reached);
 } 
 
-/////////////// ignore below this line ////////////////////
-
 process.stdin.resume();
 process.stdin.setEncoding("ascii");
 _input = "";
@@ -19,5 +17,6 @@ process.stdin.on("data", function (input) {
 });
 
 process.stdin.on("end", function () {
-   processData(_input);
+    dataProcessMarketing(_input);
 });
+
